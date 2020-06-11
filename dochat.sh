@@ -97,9 +97,9 @@ function main () {
     -e DOCHAT_DEBUG \
     -e DOCHAT_DPI \
     \
-    -e XMODIFIERS=@im=ibus \
-    -e GTK_IM_MODULE=ibus \
-    -e QT_IM_MODULE=ibus \
+    -e XMODIFIERS=@im=ibus-libpinyin \
+    -e GTK_IM_MODULE=ibus-libpinyin \
+    -e QT_IM_MODULE=ibus-libpinyin \
     -e AUDIO_GID="$(getent group audio | cut -d: -f3)" \
     -e VIDEO_GID="$(getent group video | cut -d: -f3)" \
     -e GID="$(id -g)" \
